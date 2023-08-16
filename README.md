@@ -29,5 +29,5 @@ Under the Project Settings there is a new category *Debug → Multirun* with the
 
 ## Additional Information
 
-Finding problems in the code, open a ticket on [GitHub](https://github.com/perfoon/Multirun/issues).
+Finding problems in the code, open a ticket on [GitHub](https://github.com/xiezi5160/MultirunForGodot4/issues).
 
