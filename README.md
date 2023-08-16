@@ -4,6 +4,8 @@ Multirun allows starting multiple game instances at once.
 
 The main purpose of this feature is to speed up multiplayer game development. One game instance can be configured to host the game and others to join.
 
+Upgrade to Godot 4.x.
+
 ## How to use
 
 1. Add the plugin to your project and enable it.
