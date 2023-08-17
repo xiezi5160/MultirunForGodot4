@@ -46,7 +46,12 @@ func _multirun_pressed():
 		if other_args && add_custom_args:
 			for arg in other_args.split(" "):
 				commands.push_front(arg)
-		pids.append(OS.execute(OS.get_executable_path(), commands))
+		
+		pids.append(OS.create_process(OS.get_executable_path(), commands))
+		
+
+func _start_new_view(commands: PackedStringArray):
+	pids.append(OS.create_process(OS.get_executable_path(), commands))
 
 func _loaddir_pressed():
 	OS.shell_open(OS.get_user_data_dir())
