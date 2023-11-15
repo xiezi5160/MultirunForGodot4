@@ -12,8 +12,8 @@ func _str_args_to_commands(args:String):
 	return commands
 
 func _enter_tree():
-	var editor_node = get_tree().get_root().get_child(0)
-	var gui_base = editor_node.get_gui_base()
+	var editor_node = get_editor_interface()
+	var gui_base = editor_node.get_base_control()
 	var icon_transition = gui_base.get_theme_icon("TransitionSync", "EditorIcons") #ToolConnect
 	var icon_transition_auto = gui_base.get_theme_icon("TransitionSyncAuto", "EditorIcons")
 	var icon_load = gui_base.get_theme_icon("Load", "EditorIcons")
